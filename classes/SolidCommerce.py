@@ -64,7 +64,7 @@ class API(object):
     @staticmethod
     def get_products_from_file():
         filepath = 'T:/ebay/All/inventory/SolidCommerceProducts.csv'
-        products = [dict(product) for product in csv.DictReader(open(filepath, 'r', errors='ignore'))]
+        products = [dict(product) for product in csv.DictReader(open(filepath, 'r'))]
         return products
 
     def get_products_from_file_by_mfr(self, mfr):
