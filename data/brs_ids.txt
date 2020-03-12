@@ -1,0 +1,8 @@
+{
+"PS_LoginID": "pwdist",
+"PS_LoginPassword": "pw345p",
+"PS_StoreName": "pd",
+"PS_App": "powerdistributors",
+"PS_CatalogID": "202",
+"PS_DatabaseID": "202"
+}

@@ -1,0 +1,38 @@
+{
+"PED": {
+    "BRS": "Briggs & Stratton",
+    "OEP": "Oregon"
+    },
+"CPD":{
+    "KOH": "Kohler",
+    "TEC": "Tecumseh",
+    "MTD": "MTD Products",
+    "CHA": "Champion",
+    "AYP": "American Yard Product",
+    "HYD": "Hydro-Gear",
+    "IC": "Ingersoll",
+    "NGK": "NGK",
+    "ZAM": "Zama",
+    "WAL": "Walboro"
+    },
+"OW": {
+    "AYP": "American Yard Products",
+    "KOH": "Kohler",
+    "MAR": "Maruyama",
+    "MTD": "MTD Products",
+    "MUR": "Murray",
+    "NGK": "NGK",
+    "HYD": "Hydro-Gear",
+    "ZAM": "Zama",
+    "WAL": "Walboro"
+    },
+"GE": {
+    "ECH": "Echo",
+    "BIL": "Billy Goat"
+    },
+"Single": {
+    "AIP": "A&I Products",
+    "ARN": "Ariens",
+    "KAW": "Kawasaki"
+    }
+}

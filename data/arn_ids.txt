@@ -1,0 +1,8 @@
+{
+"PS_LoginID": "78919678",
+"PS_LoginPassword": "dealers",
+"PS_StoreName": "partsradar",
+"PS_App": "ARIENS",
+"PS_CatalogID": "1",
+"PS_DatabaseID": "1"
+}

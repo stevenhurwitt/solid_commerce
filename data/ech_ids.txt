@@ -1,0 +1,8 @@
+{
+"PS_LoginID": "echo",
+"PS_LoginPassword": "echo",
+"PS_StoreName": "echoinc",
+"PS_App": "echo",
+"PS_CatalogID": "2",
+"PS_DatabaseID": "2"
+}

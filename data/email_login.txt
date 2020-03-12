@@ -1,0 +1,5 @@
+{"UserName": "joel@mchenrypowerinc.com",
+"Password": "WilloW4508",
+"To": "joel@mchenrypowerinc.com",
+"From": "alert@mchenrypowerinc.com",
+"Server": "whm1.goodboyhost.com:465"}
