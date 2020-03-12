@@ -1,0 +1,27 @@
+name: ebay_api_config
+
+# Trading API Sandbox - https://www.x.com/developers/ebay/products/trading-api
+api.sandbox.ebay.com:
+    compatability: 719
+    appid: JoelOhma-MPE-SBX-52628f409-96a6575c
+    certid: SBX-2628f4095cba-fd49-486f-a62c-4d02
+    devid: 6d1eab60-fa38-4cd0-8365-c601953fa118
+    token: ENTER_YOUR_TOKEN_HERE
+
+# Trading API - https://www.x.com/developers/ebay/products/trading-api
+api.ebay.com:
+    compatability: 719
+    appid: JoelOhma-MPE-PRD-a392af54d-2faf7f08
+    certid: PRD-392af54d938e-e628-4c83-9600-0eb2
+    devid: 6d1eab60-fa38-4cd0-8365-c601953fa118
+    token: AgAAAA**AQAAAA**aAAAAA**jhY7XQ**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wJk4qlCJCGpgSdj6x9nY+seQ**7McFAA**AAMAAA**PIXtp0dhJE8pP71BVEUJrOoDcS58nf1lWCP26fpcrgMdOASpAEdnyixixYCEZQtuwM2PZnSUeuUJedJQbOKu8At6gXXSQo5+0jdMMiUZwzENG+huVzQt7Zsi5LVtl42SJDWzRnZXmCnRnT6OcUEv4ebqDxazTSmUuMRzxVxWaxFnb+7cE9pZMovTvNFmDUIlOi0NTIYbOUfPTKNqE4kPcDuHoHeYEwDFoISZEiFapAK0x0B+rBVesSCbHRsVwE66L3FypDUgvsJpga4KyWN2ES3hDBW6ppeBgAZvpXfRYvIMnG6fi5CbTPC+z6qUSkrafk2fYiCDy2w7ZV2xjCLBi92TSC4d/I6sZUAxIQ0/AglLEkeP/4fhrJE1FX9ZIzdb3QeDJ05qkYF8+xVUKXaZi79t41KxE03mqQWByfkMbSEl9wqvCzJUSjeteTHEmGl+y9ygCWTiX6vaeW9qa4C3COFtZvHr1SQEzQo5iEVrsHYyiXpGnmbHp7Kz3/6snWh9u1QSe111gdHiexiWjz+xKUsVrGLwvqtEpMKJ3UeZ7Jmiq4GFEQoDpIN8FvGiW7NKrHHMT7gFSrm1EF8BuNRaTDo/gOuDC0DIANfZxXR+Rzb53NB5pElCo+EDdBeRqH8aE/5Bd+4AWg5f64tor9AG+0+x1TCahivmdb46nDV397f1aKe+1Mnw9ogBYXlqKP5qFnKXCkh4rcuGLH4qT1BsCzQkZTeVjcM/ixxzjeIn1XxxPo5TNk7UMPtrtjFoNpTn
+
+# Finding API - https://www.x.com/developers/ebay/products/finding-api
+svcs.ebay.com:
+    appid: JoelOhma-MPE-PRD-a392af54d-2faf7f08
+    version: 1.0.0
+
+# Shopping API - https://www.x.com/developers/ebay/products/shopping-api
+open.api.ebay.com:
+    appid: JoelOhma-MPE-PRD-a392af54d-2faf7f08
+    version: 671
