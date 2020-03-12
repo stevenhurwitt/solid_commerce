@@ -1,0 +1,11 @@
+{
+"UserID": "kmc51948",
+"DealerID": "51948",
+"Password": "3622Elm",
+"PS_LoginID": "Kawasaki",
+"PS_LoginPassword": "test",
+"PS_StoreName": "kawasaki",
+"PS_App": "Kawasaki",
+"PS_CatalogID": "32",
+"PS_DatabaseID": "23"
+}
