@@ -45,7 +45,7 @@ class API(object):
         return company_list
 
     def get_all_orders(self):
-        save_filepath = 'U:/Solid/Data/2019/orders.csv'
+        save_filepath = '/home/steven/solid_commerce/data/orders.csv'
         order_search_filter = OrderSearchFilter()
         order_search_filter.page = '1'
         order_search_filter.records_per_page_count = '50000'
@@ -63,7 +63,7 @@ class API(object):
 
     @staticmethod
     def get_products_from_file():
-        filepath = 'T:/ebay/All/inventory/SolidCommerceProducts.csv'
+        filepath = '/home/steven/solid_commerce/data/SolidCommerceProducts.csv'
         products = [dict(product) for product in csv.DictReader(open(filepath, 'r'))]
         return products
 
@@ -313,7 +313,7 @@ class API(object):
 
     @staticmethod
     def log_api_error_response(request_name, request, response_text):
-        log_dir = 'T:/ebay/SolidCommerce/XML Logs/'
+        log_dir = '/home/steven/Documents/solid_commerce/data/'
         request_file_name = time.strftime('%d%m%y.%H%M') + request_name + '.Request.xml'
         response_file_name = time.strftime('%d%m%y.%H%M') + request_name + '.Response.xml'
         with open(log_dir + request_file_name, 'w', errors='ignore') as request_file:

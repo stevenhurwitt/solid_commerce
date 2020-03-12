@@ -15,7 +15,7 @@ class GE(Distributor.Distributor):
 
     def inventory_from_file(self, products):
         vendor_products = {}
-        distributor_inventory_filepath = 'T:/ebay/Golden Eagle/Inventory/Mchenry.xlsx'
+        distributor_inventory_filepath = '/home/steven/solid_commerce/inventory/Mchenry.xlsx'
         workbook = xlrd.open_workbook(distributor_inventory_filepath, on_demand=True)
         worksheet = workbook.sheet_by_index(0)
         first_row = []  # The row where we stock the name of the column
