@@ -21,6 +21,7 @@ from pathlib import Path
 import requests
 import ftplib
 import ImageTools
+import io
 from io import BytesIO
 
 
@@ -35,12 +36,12 @@ class Distributor():
         self.manufacturer_long_name = ''
         self.username = ''
         self.password = ''
-        self.distributor_file_path_root = r'T:/ebay/' + self.distributor_short_name
+        self.distributor_file_path_root = r'/home/steven/solid_commerce/data/' + self.distributor_short_name
         self.manufacturer_file_path_root = None
         self.temp_filepath = ''
 
     def get_manufacturer_file_path_root(self):
-        return r'T:/ebay/' + self.manufacturer_short_name
+        return r'/home/steven/solid_commerce/data/' + self.manufacturer_short_name
 
     # Requires some form of Distributor Inventory Interface In Child Object
     def get_distributor_inventory(self, inventory_method):
@@ -72,9 +73,13 @@ class Distributor():
         self.write_inventory_to_csv(inventory)
 
     def inventory_from_default_to_solid(self):
-        inventory = self.get_distributor_inventory_for_solid(self.inventory_from_default)
-        solid_api = SolidAPI()
-        solid_api.upload_list_items([product.as_dict_for_solid() for product in inventory])
+        try:
+            inventory = self.get_distributor_inventory_for_solid(self.inventory_from_default)
+            solid_api = SolidAPI()
+            solid_api.upload_list_items([product.as_dict_for_solid() for product in inventory])
+
+        except:
+            print('error.')
 
     # Implement in all children if possible
     def get_tracking(self):
@@ -188,14 +193,25 @@ class Distributor():
 
     def log_distributor_event(self, event_dict):
         distributor_error_filepath = self.distributor_file_path_root + '/logs/log_' + self.get_time_day() + '.csv'
+        
         if not Path(distributor_error_filepath).is_file():
-            with open(distributor_error_filepath, 'w', newline='') as log_file:
+            
+            with io.open(distributor_error_filepath, 'w', newline='', encoding = 'utf-8') as log_file: # use io.open instead of open
                 keys = event_dict.keys()
-                dict_writer = csv.DictWriter(log_file, keys)
+                #log_file = log_file.decode('utf-8')
+                print(('keys: ', keys))
+                #print(('log: ', log_file))
+                print(event_dict)
+                dict_writer = csv.DictWriter(log_file.name.encode('utf-8'), keys)
                 dict_writer.writeheader()
-        with open(distributor_error_filepath, 'a', newline='') as log_file:
+        
+        with io.open(distributor_error_filepath, 'a', newline='', encoding = 'utf-8') as log_file:
             keys = event_dict.keys()
-            dict_writer = csv.DictWriter(log_file, keys)
+            #log_file = log_file.decode('utf-8')
+            print(('keys: ', keys))
+            #print(('log: ', log_file))
+            print(event_dict)
+            dict_writer = csv.DictWriter(log_file.name.encode('utf-8'), keys)
             dict_writer.writerow(event_dict)
 
     @staticmethod
@@ -332,7 +348,7 @@ class Distributor():
                 pass
         self.write_list_of_dicts_to_csv(
             scraped_products,
-            'T:/ebay/' + self.manufacturer_short_name + '/data/ebay_scrapes/'
+            '/home/steven/Documents/solid_commerce/data/' + self.manufacturer_short_name + '/ebay_scrapes/'
             'eBaySearchScrapes.' + self.get_time_day() + '.csv'
         )
 
