@@ -45,6 +45,8 @@ dependencies:
   - libuuid=1.0.3=h1bed415_2
   - libxcb=1.13=h1bed415_1
   - libxml2=2.9.9=hea5a465_1
+  - libxslt=1.1.33=h7d1a2b0_0
+  - lxml=4.4.2=py27hefd8a0e_0
   - matplotlib=2.2.3=py27hb69df0a_0
   - mkl=2020.0=166
   - mkl-service=2.3.0=py27he904b0f_0
@@ -53,8 +55,9 @@ dependencies:
   - ncurses=6.2=he6710b0_0
   - numpy=1.16.6=py27hbc911f0_0
   - numpy-base=1.16.6=py27hde5b4d6_0
-  - openssl=1.1.1d=h7b6447c_4
+  - openssl=1.1.1e=h7b6447c_0
   - pandas=0.24.2=py27he6710b0_0
+  - pathlib=1.0.1=py27_1
   - pcre=8.43=he6710b0_0
   - pip=19.3.1=py27_0
   - pycparser=2.19=py27_0
@@ -82,7 +85,17 @@ dependencies:
   - urllib3=1.25.7=py27_0
   - webencodings=0.5.1=py27_1
   - wheel=0.33.6=py27_0
+  - xlrd=1.2.0=py27_0
+  - xlwt=1.3.0=py27_0
   - xz=5.2.4=h14c3975_4
   - yaml=0.1.7=had09818_2
   - zlib=1.2.11=h7b6447c_3
+  - pip:
+    - astroid==1.6.6
+    - configparser==4.0.2
+    - isort==4.3.21
+    - lazy-object-proxy==1.4.3
+    - mccabe==0.6.1
+    - pylint==1.9.5
+    - wrapt==1.12.1
 prefix: /home/steven/miniconda3/envs/py2
